@@ -1,0 +1,27 @@
+Exercice 1.a
+
+echo "Annotations en 2016 :" > comptes.txt 
+cat ../../exercice1/ann/2016/{01,02,03,04,05,06,07,08,09,10,11,12}/* | wc -l >> comptes.txt 
+echo "Annotations en 2017 :" >> comptes.txt 
+cat ../../exercice1/ann/2017/{01,02,03,04,05,06,07,08,09,10,11,12}/* | wc -l >> comptes.txt 
+echo "Annotations en 2018 :" >> comptes.txt 
+cat ../../exercice1/ann/2018/{01,02,03,04,05,06,07,08,09,10,11,12}/* | wc -l >> comptes.txt 
+
+Exercice 1.b
+
+echo "Annotations en 2016 :" > locations.txt
+cat ../../exercice1/ann/2016/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" |  wc -l >> locations.txt 
+echo "Annotations en 2017 :" >> locations.txt
+cat ../../exercice1/ann/2017/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" |  wc -l >> locations.txt 
+echo "Annotations en 2018 :" >> locations.txt
+cat ../../exercice1/ann/2018/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" |  wc -l >> locations.txt
+
+Exercice 2.a
+
+cat ../../exercice1/ann/2016/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" | cut -f 3 | sort -r | uniq -c | sort -n | tail -n15 > classement_2016.txt
+cat ../../exercice1/ann/2017/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" | cut -f 3 | sort -r | uniq -c | sort -n | tail -n15 > classement_2017.txt
+cat ../../exercice1/ann/2018/{01,02,03,04,05,06,07,08,09,10,11,12}/* | grep "Location" | cut -f 3 | sort -r | uniq -c | sort -n | tail -n15 > classement_2018.txt
+
+Exercice 2.b
+
+cat ../../exercice1/ann/{2016,2017,2018}/09/* | grep "Location" | cut -f 3 | sort -r | uniq -c | sort -n | tail -n15 > classement_septembre.txt
