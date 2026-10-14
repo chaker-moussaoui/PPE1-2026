@@ -14,3 +14,6 @@ D'autre part, j'ai pris conscience que le joker * ne fonctionnait pas exactement
 mv .*.ann ann/ # cette commande permet de déplacer les fichiers .ann qui commencent par un .
 mv *.ann ann/ # alors que mettre simplement l'étoile signifie tous les fichiers .ann
 ```
+
+## exercices git
+
