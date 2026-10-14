@@ -17,3 +17,5 @@ mv *.ann ann/ # alors que mettre simplement l'étoile signifie tous les fichiers
 
 ## exercices git
 
+C'est le fichier oups.md
+Voici une autre ligne
