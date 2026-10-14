@@ -1,9 +1,5 @@
 # Journal de bord du projet encadré
 
-CECI EST LA LIGNE DE TROP
-
-Cette ligne doit rester après correction.
-
 ## 1 Octobre (TP git et manipulation de fichiers)
 
 Ayant déjà manipulé auparavant les commandes de base en bash, ces exercices ont été pour moi l'occasion de réviser mes connaissances en ligne de commandes.
