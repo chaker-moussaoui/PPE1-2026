@@ -15,7 +15,10 @@ mv .*.ann ann/ # cette commande permet de déplacer les fichiers .ann qui commen
 mv *.ann ann/ # alors que mettre simplement l'étoile signifie tous les fichiers .ann
 ```
 
-## exercices git
+## 14 Octobre (git)
 
-C'est le fichier oups.md
-Voici une autre ligne
+Pour l'exercice git, je me suis arrêté à la question 2.B car je ne comprends pas pourquoi on doit récupérer le SHA du commit "I AM ERROR" et l'associer avec reset.
+
+Le reste de ce TD me paraît également flou.
+
+ 
