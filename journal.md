@@ -28,5 +28,10 @@ Plus dans le détail, ce script commence par vérfier si un seul argument est do
 Puis, à l'aide d'une boucle while, le fichier est lu ligne par ligne tout en vérifiant si la ligne en question est une URL valide.
 Finalement, le script affiche le nombre d'URLs détectés et le nombre du reste de ligne différentes.
 
+## 4 Novembre (miniprojet-1)
 
- 
+J'ai remarqué que, dans les scripts, les espaces et les guillemets ont une très grande importance. Parfois, une erreur peut simplement provenir de là.
+```bash
+FICHIER = "$1" # me donne une erreur
+FICHIER="$1" # fonctionne correctement
+```
