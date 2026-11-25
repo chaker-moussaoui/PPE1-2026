@@ -38,7 +38,7 @@ FICHIER="$1" # fonctionne correctement
 ```
 ## 25 Novembre (miniprojet-2)
 
-J'ai constaté que lorsqu'on veut écrire dans un fichier les guillemets, il faut absolument les échapper avec \.
+J'ai constaté que lorsqu'on veut écrire dans un fichier les guillemets, il faut absolument les échapper avec la barre oblique inversée.
 
 ```bash
 echo "<meta charset="UTF-8" />" # ne fonctionne pas comme attendu
