@@ -6,6 +6,9 @@ echo "cette commande requiert exactement 1 argument" >&2
 exit
 fi
 
+echo -e "<html>\n<head>\n<meta charset=\"UTF-8\" />\n</head>\n<body>\n<table>" > "../tableaux/tableau-fr.html"
+echo -e "<tr>\n<th>numéro</th>\n<th>lien</th>\n<th>réponse</th>\n<th>encodage</th>\n<th>mots</th>\n</tr>" >> "../tableaux/tableau-fr.html"
+
 NBR_LIGNE=0
 while read -r line;
 do
@@ -17,6 +20,16 @@ if [ -z $ENCODAGE ];
 then
 ENCODAGE="inconnu"
 fi
-NBR_MOTS=$(lynx -dump -nolist ${line} | wc -w) 
-echo -e "$NBR_LIGNE\t${line}\t$REPONSE_SERV\t$ENCODAGE\t$NBR_MOTS" >> "../tableaux/tableau-fr.tsv";
+NBR_MOTS=$(lynx -dump -nolist ${line} | wc -w)
+
+echo "<tr>" >> "../tableaux/tableau-fr.html"
+for ELEMENT in $NBR_LIGNE ${line} $REPONSE_SERV $ENCODAGE $NBR_MOTS
+do
+echo "<td>$ELEMENT</td> " >> "../tableaux/tableau-fr.html"
+done
+
+echo "</tr>" >> "../tableaux/tableau-fr.html"
+
 done < "$FICHIER"
+
+echo -e "</table>\n</body>\n</html>" >> "../tableaux/tableau-fr.html"
