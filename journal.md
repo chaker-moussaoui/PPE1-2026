@@ -31,7 +31,16 @@ Finalement, le script affiche le nombre d'URLs détectés et le nombre du reste 
 ## 4 Novembre (miniprojet-1)
 
 J'ai remarqué que, dans les scripts, les espaces et les guillemets ont une très grande importance. Parfois, une erreur peut simplement provenir de là.
+
 ```bash
 FICHIER = "$1" # me donne une erreur
 FICHIER="$1" # fonctionne correctement
+```
+## 25 Novembre (miniprojet-2)
+
+J'ai constaté que lorsqu'on veut écrire dans un fichier les guillemets, il faut absolument les échapper avec \.
+
+```bash
+echo "<meta charset="UTF-8" />" # ne fonctionne pas comme attendu
+echo "<meta charset=\"UTF-8\" />" # l'emploi est ici correct
 ```
